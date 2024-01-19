@@ -72,3 +72,7 @@
     box-shadow: none;
     outline: none;
 }
+
+.container-category{
+    height: 90px;
+  }

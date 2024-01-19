@@ -1,17 +1,17 @@
 import 'bootstrap/dist/css/bootstrap.css';
-import "bootstrap-icons/font/bootstrap-icons.css";
 import 'bootstrap/dist/js/bootstrap.js';
 import './Products.css'
 
+import photo from '../../assets//images/cat.jpg'
 
-function Product(image: any, text: string) {
+function Product(props: any) {
   return (
     <div className="col m-1">
       <a className="green">
-        <div className="card ">
-          <img src={image} className="card-img-top" alt="..." />
+        <div className="card">
+          <img src={props.image} className="card-img-top card-width" alt="..." />
           <div className="card-body">
-            <p className="card-text">{text}</p>
+            <p className="card-text">{props.text}</p>
           </div>
         </div>
       </a>
@@ -24,7 +24,10 @@ export default function Products() {
     <>
       <div className="container-content">
         <div className="row row-cols-auto justify-content-left">
-          <Product image="../../assets/images/cat.jpg" text="хуй" />
+          <Product image={photo} text="Большой текст" />
+          <Product image={photo} text="Большой текст" />
+          <Product image={photo} text="Большой текст" />
+          <Product image={photo} text="Большой текст" />
         </div>
       </div>
     </>

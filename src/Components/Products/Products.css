@@ -1,3 +1,15 @@
 .card-width{
     width: 20rem;
 }
+
+.green:hover {
+    color: #33CCCC;
+    /* font-weight: bold; */
+  }
+  
+  .green {
+    color: rgb(30, 207, 148);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  

@@ -1,4 +1,4 @@
-import './Header.css'
+import styles from './Header.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
 import 'bootstrap/dist/js/bootstrap.js';
@@ -6,6 +6,8 @@ import 'bootstrap/dist/js/bootstrap.js';
 export default function Header() {
     return (
         <>
+        {/* container-category */}
+        <div className="{styles.}"></div>
             <header className="black head">
                 <nav className="padding-10">
                     <div>
@@ -32,3 +34,4 @@ export default function Header() {
         </>
     )
 }
+
